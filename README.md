@@ -12,6 +12,7 @@
 - [쿠버네티스 동작원리(아키텍쳐)](./kubernetes/kuberbetes동작원리.md)
 - [kubectl](./kubernetes/kubectl.md)
 - [namespace](./kubernetes/namespace.md)
+- [Pod](./kubernetes/pod.md)
 
 
 
