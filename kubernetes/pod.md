@@ -26,7 +26,7 @@ $ watch kubectl get pods -o wide
 
 *실제 실행 화면*
 
-<img src="./imgs/watch명령어.png" width="600">
+<img src="./imgs/watch명령어.png" width="800">
 
 <br>
 
