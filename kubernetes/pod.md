@@ -26,9 +26,9 @@ $ watch kubectl get pods -o wide
 
 *실제 실행 화면*
 
-![watch명령어이용](./kubernetes/imgs/watch명령어.png)
+![watch명령어이용](./imgs/watch명령어.png)
 
 2. curl [ip] : command라인에서 웹 브라우저를 보여주는 명령어
 
 *실제 실행화면*
-![curl](./kubernetes/imgs/curl명령어이용.png)
+![curl](./imgs/curl명령어이용.png)
