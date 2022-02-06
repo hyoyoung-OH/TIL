@@ -35,3 +35,23 @@ $ watch kubectl get pods -o wide
 *실제 실행화면*
 
 <img src="./imgs/curl명령어이용.png" width="600">
+
+### multi-container Pod 생성
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+ name: multipod
+spec:
+ containers:
+ - name: nginx-container  #containers의 name이 2개임
+   image: nginx:1.14
+   ports:
+   - containerPort: 80
+ - name: centos-container
+   image: centos:7
+   command:
+    - sleep
+    - "10000"
+```
