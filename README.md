@@ -13,6 +13,7 @@
 - [kubectl](./kubernetes/kubectl.md)
 - [namespace](./kubernetes/namespace.md)
 - [Pod](./kubernetes/pod.md)
+- [LivenessProve(self-healing)](./kubernetes/Self-healing.md)
 
 
 
