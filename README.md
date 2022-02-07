@@ -14,6 +14,7 @@
 - [namespace](./kubernetes/namespace.md)
 - [Pod](./kubernetes/pod.md)
 - [LivenessProve(self-healing)](./kubernetes/Self-healing.md)
+- [initcontainer](./kubernetes/initcontainer.md)
 
 
 
