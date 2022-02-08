@@ -18,6 +18,7 @@
 - [staticPod](./kubernetes/static-Pod.md)
 - [storage](./kubernetes/storage.md)
 - [request&limits](./kubernetes/cpu-memoryrequests-limits.md)
+- [Controller](./kubernetes/Controller.md)
 
 
 
