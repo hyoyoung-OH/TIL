@@ -15,6 +15,8 @@
 - [Pod](./kubernetes/pod.md)
 - [LivenessProve(self-healing)](./kubernetes/Self-healing.md)
 - [initcontainer](./kubernetes/initcontainer.md)
+- [staticPod](./kubernetes/static-Pod.md)
+- [storage](./kubernetes/storage.md)
 
 
 
