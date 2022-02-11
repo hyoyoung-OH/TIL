@@ -26,10 +26,7 @@ selector:
     - Notln: key는 일치하고 value는 일치하지 않는 Pod에 연결
     - Exists: key에 맞는 label의 pod를 연결
     - DoesNotExist: key와 다른 label의 pod를 연결
-### 1. Replicaset
-### 1. Replicaset
-### 1. Replicaset
-### 1. Replicaset
+
 
 
 
