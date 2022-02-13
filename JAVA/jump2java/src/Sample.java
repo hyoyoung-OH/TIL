@@ -1,4 +1,5 @@
-import java.util.Locale;
+import java.util.ArrayList;
+
 
 public class Sample {
     public static void main(String[] args) {
@@ -78,5 +79,32 @@ public class Sample {
         ArrayIndexOutOfBoundsException : 예를들어 배열의 길이는 총 7개인데, 만약 8번쨰 값을 얻으려고 시도하면 이와같은 오류 발생
          */
 
+        //List
+        //ArrayList
+        //add
+        ArrayList pitches = new ArrayList();
+        pitches.add("138");
+        pitches.add("129");
+        pitches.add("142");
+        //get
+        System.out.println(pitches.get(1));
+        //size ArrayList의 갯수를 리턴한다
+        System.out.println(pitches.size());
+        //contains 리스트 안에 해당 항목이 있는 지를 판별하여 그 결과물을 boolean 으로 리턴
+        System.out.println(pitches.contains("142"));
+        /* remove 방식이 2가지 있음
+        1. remove(객체): 리스트에서 객체에 해당되는 항목을 삭제하고 삭제한 결과(true, false)를 리턴
+        2. remove(인덱스): 해당 인덱스의 항목을 삭제하고 삭제된 항목을 리턴
+         */
+        System.out.println(pitches.remove("129"));
+        System.out.println(pitches.remove(0));
+
+        //Generics
+//        ArrayList<String> pitches = new ArrayList<>();
+        /* <String>이라는 제네릭 표현식은 'ArrayList 안에 담을 수 있는 자료형은 String 타입 뿐이다'라는 것을 의미
+        즉, 제네릭스를 이용하면 좀 더 명확한 타입 체크가 가능
+         */
+
     }
 }
+
