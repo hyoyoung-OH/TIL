@@ -57,7 +57,22 @@ public class Sample {
         System.out.println(a.toUpperCase());
         //split 문자열을 특정 구분자로 분리하는 메서드
         String b = "a:b:c:d";
-        String[] result = a.split(":");
+//        String[] result = a.split(":");
+
+        //StringBuffer 문자열을 추가하거나 변경할 때 사용
+
+        //append
+        StringBuffer sb = new StringBuffer(); //StringBuffer 객체 sb 생성
+        sb.append("Hello");
+        sb.append(" ");
+        sb.append("jump to java");
+        String result = sb.toString();
+        System.out.println(result);
+
+        //insert 특정 위치에 원하는 문자열을 삽입할 수 있다.
+        sb.insert(0, "hello ");
+        System.out.println(sb.toString());
+
 
     }
 }
