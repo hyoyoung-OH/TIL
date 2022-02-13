@@ -73,6 +73,10 @@ public class Sample {
         sb.insert(0, "hello ");
         System.out.println(sb.toString());
 
+        //Array 자료형의 집합을 의미
+        /*자주 접하는 오류
+        ArrayIndexOutOfBoundsException : 예를들어 배열의 길이는 총 7개인데, 만약 8번쨰 값을 얻으려고 시도하면 이와같은 오류 발생
+         */
 
     }
 }
