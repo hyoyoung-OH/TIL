@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 
 public class Sample {
@@ -123,6 +125,35 @@ public class Sample {
         //LinkedHashMap : 입력한 순서대로 데이터를 저장
         //TreeMap : 입력한 key의 오름차순 순서로 데이터를 저장
 
+        //Set: Set자료형에는 HashSet, TreeSet, LinkedHashSet 등의 Set 인터페이스를 구현한 자료형이 있다.
+        HashSet<String> set = new HashSet<>(Arrays.asList("H", "e", "l", "l", "o"));
+        System.out.println(set);
+
+        HashSet<Integer> s1 = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        HashSet<Integer> s2 = new HashSet<>(Arrays.asList(4, 5, 6, 7, 8, 9));
+        HashSet<Integer> intersection = new HashSet<>(s1);
+
+        intersection.retainAll(s2); //교집합 수행
+        System.out.println(intersection); // [4,5,6] 출력
+
+        HashSet<Integer> union = new HashSet<>(s1); //s1으로 union 생성
+        union.addAll(s2); //합집합 수행
+        System.out.println(union);
+
+        HashSet<Integer> substract = new HashSet<>(s1);
+        substract.removeAll(s2); //차집합 수행
+        System.out.println(substract);
+
+        set.add("Jump");
+        set.add("To");
+        set.add("Java");
+        System.out.println(set);
+
+        set.addAll(Arrays.asList("To", "Java"));
+        System.out.println(set);
+
+        set.remove("To");
+        System.out.println(set);
 
     }
 }
