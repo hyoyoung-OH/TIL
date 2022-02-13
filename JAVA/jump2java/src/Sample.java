@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Sample {
@@ -100,10 +101,28 @@ public class Sample {
         System.out.println(pitches.remove(0));
 
         //Generics
-//        ArrayList<String> pitches = new ArrayList<>();
+        //ArrayList<String> pitches = new ArrayList<>();
         /* <String>이라는 제네릭 표현식은 'ArrayList 안에 담을 수 있는 자료형은 String 타입 뿐이다'라는 것을 의미
         즉, 제네릭스를 이용하면 좀 더 명확한 타입 체크가 가능
          */
+
+        //Map
+        //HashMap
+        HashMap<String, String> map = new HashMap<>();
+        map.put("people", "사람");
+        map.put("baseball", "야구");
+
+        System.out.println(map.get("people"));
+        System.out.println(map.get("hy"));
+        System.out.println(map.getOrDefault("hy", "효영"));
+        System.out.println(map.containsKey("people"));
+//        System.out.println(map.remove("people"));
+        System.out.println(map.size());
+        System.out.println(map.keySet());
+
+        //LinkedHashMap : 입력한 순서대로 데이터를 저장
+        //TreeMap : 입력한 key의 오름차순 순서로 데이터를 저장
+
 
     }
 }
