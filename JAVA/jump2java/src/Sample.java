@@ -1,22 +1,27 @@
+class Calculator {
+    int result = 0;
 
+    int add(int num) {
+        result += num;
+        return result;
+    }
+
+    int sub(int num) {
+        result -= num;
+        return result;
+    }
+}
 
 public class Sample {
-
     public static void main(String[] args) {
-        int[] marks = {90, 25, 67, 45, 80};
+        Calculator cal1 = new Calculator(); //계산기1 객체를 생성
+        Calculator cal2 = new Calculator(); //계산기2 객체를 생성
 
-        for (int i = 0; i < marks.length; i++) {
-            if (marks[i] >= 60) {
-                System.out.println((i + 1) + "번 학생은 합격입니다");
-            } else {
-                System.out.println((i + 1) + "번 학생은 불합격입니다.");
-            }
+        System.out.println(cal1.add(3));
+        System.out.println(cal1.add(4));
 
-            if (marks[i] < 60) {
-                continue;
-            }
-            System.out.println((i + 1) + "번 학생 축하합니다");
-        }
+        System.out.println(cal2.add(3));
+        System.out.println(cal2.add(7));
     }
 }
 
