@@ -1,5 +1,6 @@
 package classpart;
 
 public class StudentTest {
-    void English = new english;
+    void English = new english();
+
 }
