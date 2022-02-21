@@ -11,3 +11,19 @@
 ## html is a markup language not a programming language
 - html은 태그가 기본
 - 태그는 외우지 않아도 됨 자연스럽게 외워짐
+
+# 2-1. css layout
+## display
+- inline: 물건
+- inline-block: 상자인데 한 줄에 여러개가 진열될 수 있음
+- block: 상자인데 한 줄 당 하나씩 들어감
+
+## position
+기본값은 static
+relative: 원래 있어야하는 item에서 옮겨감
+fixed: 상자에서 완전히 벗어나 웹페이지 상에서 움직임
+absolute: item이 담겨있는 상자 안에서 움직임
+sticky: 원래 있어야하는 자리에 있으면서 scroll이 되어도 움직이지 않고 딱 붙어있음
+
+
+
