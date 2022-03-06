@@ -48,3 +48,16 @@ console.log(player);
 player.lastName = "OH";
 console.log(player);
 ```
+
+### function
+
+계속 재사용하는 코드 조각, 코드를 캡슐화하여 계속 사용할 수 있게 한다.
+
+```javascript
+function sayHello(nameOfPerson, age) {
+  console.log("Hello my name is " + nameOfPerson + "and I am " + age);
+}
+
+sayHello("lisa", 26);
+sayHello("nico", 99);
+```

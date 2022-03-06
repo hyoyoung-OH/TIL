@@ -1,16 +1,20 @@
+function plus(a, b) {
+  console.log(a + b);
+}
+
+function divide(c, d) {
+  console.log(c / d);
+}
+plus(1, 2);
+divide(10, 2);
+
 const player = {
   name: "lisa",
-  points: 10,
-  fat: true,
+  sayHello: function (otherPersonsName) {
+    console.log(`hello ${otherPersonsName}! nice to meet you!`);
+  },
 };
 
-console.log(player);
 console.log(player.name);
-
-console.log(player);
-player.fat = false;
-console.log(player);
-
-// object에 항목 추가
-player.lastName = "OH";
-console.log(player);
+player.sayHello("oh");
+player.sayHello("papa");
