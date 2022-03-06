@@ -15,7 +15,7 @@ const myName = "lisa";
 
 하나의 variable 안애 데이터의 list를 가지는 것
 
-```javascripe
+```javascript
 const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
 console.log(daysOfWeek);
@@ -26,4 +26,25 @@ console.log(daysOfWeek[0]);
 // Add one more day to the array
 daysOfWeek.push("sun");
 console.log(daysOfWeek);
+```
+
+### object
+
+```javascript
+const player = {
+  name: "lisa",
+  points: 10,
+  fat: true,
+};
+
+console.log(player);
+console.log(player.name);
+
+console.log(player);
+player.fat = false;
+console.log(player);
+
+// object에 항목 추가
+player.lastName = "OH";
+console.log(player);
 ```
