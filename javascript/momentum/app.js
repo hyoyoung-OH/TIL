@@ -1,20 +1,21 @@
-function plus(a, b) {
-  console.log(a + b);
-}
-
-function divide(c, d) {
-  console.log(c / d);
-}
-plus(1, 2);
-divide(10, 2);
-
-const player = {
-  name: "lisa",
-  sayHello: function (otherPersonsName) {
-    console.log(`hello ${otherPersonsName}! nice to meet you!`);
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  times: function (a, b) {
+    return a * b;
   },
 };
 
-console.log(player.name);
-player.sayHello("oh");
-player.sayHello("papa");
+const plusResult = calculator.add(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+
+console.log(divideResult);
