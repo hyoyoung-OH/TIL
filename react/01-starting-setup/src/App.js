@@ -1,7 +1,12 @@
+import Todo from './component/Todo';
+
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <h1>My todos</h1>
+      <Todo text='work' />
+      <Todo text='programming' />
+      <Todo text='speaking' />
     </div>
   );
 }
