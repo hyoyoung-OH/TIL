@@ -1,4 +1,5 @@
 // 새로운 meetup 추가할 수 있음
+import MeetupList from '../component/meetups/MeetupList';
 
 const DUMMY_DATA = [
   {
@@ -25,11 +26,7 @@ function AllMeetupsPage() {
   return (
     <section>
       <h1>All Meetups Page</h1>
-      <ul>
-        {DUMMY_DATA.map((meetup) => {
-          return <li key={meetup.id}>{meetup.title}</li>;
-        })}
-      </ul>
+      <MeetupList meetups={DUMMY_DATA} />
     </section>
   );
 }
