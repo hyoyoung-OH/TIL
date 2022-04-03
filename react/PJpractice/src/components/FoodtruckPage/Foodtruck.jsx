@@ -8,6 +8,7 @@ import {
   AiFillHeart,
   AiOutlineHeart,
 } from 'react-icons/ai';
+import WaitingNum from './WaitingNum';
 
 //푸드트럭페이지
 //동적으로 받아올 것들: 푸드트럭명, 대기번호 , 공지 글, 메뉴 정보,
@@ -33,43 +34,43 @@ const DUMMY_DATA = [
 
 const Foodtruck = () => {
   const [like, setLike] = useState(false);
-  const likeClick = () => {
-    if (like) {
-      setLike(ture);
-      //찜 누르면 꽉찬 하트
-    } else {
-      setLike(false);
-    }
-  };
-  const likebutton = () => {
-    return (
-      <>
-        <section>
-          <h1>푸드트럭 명</h1>
-          <button onClick={likebutton}>{heart}</button>
-        </section>
-        <section>
-          <button>공지</button>
-          <button>메뉴</button>
-          <button>리뷰</button>
-        </section>
-        <section>
-          <h2>
-            공지사항 <AiFillNotification />
-          </h2>
-          <FoodtruckNotice />
-        </section>
+  // const likeClick = () => {
+  //   if (like) {
+  //     setLike(ture);
+  //     //찜 누르면 꽉찬 하트
+  //   } else {
+  //     setLike(false);
+  //   }
+  // };
+  // const likebutton = () => {
+  return (
+    <>
+      <section>
+        <h1>푸드트럭 명</h1>
+        <button>찜하기아이콘</button>
+        <WaitingNum />
+      </section>
+      <section>
+        <button>공지</button>
+        <button>메뉴</button>
+        <button>리뷰</button>
+      </section>
+      <section>
+        <h2>
+          공지사항 <AiFillNotification />
+        </h2>
+        <FoodtruckNotice />
+      </section>
 
-        <section>
-          <h2>
-            메뉴 <MdOutlineMenuBook />
-          </h2>
+      <section>
+        <h2>
+          메뉴 <MdOutlineMenuBook />
+        </h2>
 
-          <MenuList menus={DUMMY_DATA} />
-        </section>
-      </>
-    );
-  };
+        <MenuList menus={DUMMY_DATA} />
+      </section>
+    </>
+  );
 };
 
 export default Foodtruck;
