@@ -2,10 +2,14 @@
 import NewMeetupForm from '../component/meetups/NewMeetupForm';
 
 function NewMeetupPage() {
+  function onAddMeetupHandler(meetupData) {
+    //http 요청 보냄
+    fetch('');
+  }
   return (
     <section>
       <h1>Add New Meetup</h1>
-      <NewMeetupForm />
+      <NewMeetupForm onAddMeetup={onAddMeetupHandler} />
     </section>
   );
 }
