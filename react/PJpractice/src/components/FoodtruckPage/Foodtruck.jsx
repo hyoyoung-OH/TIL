@@ -44,32 +44,40 @@ const Foodtruck = () => {
   // };
   // const likebutton = () => {
   return (
-    <>
-      <section>
-        <h1>푸드트럭 명</h1>
-        <button>찜하기아이콘</button>
-        <WaitingNum />
-      </section>
-      <section>
-        <button>공지</button>
-        <button>메뉴</button>
-        <button>리뷰</button>
-      </section>
-      <section>
-        <h2>
-          공지사항 <AiFillNotification />
-        </h2>
-        <FoodtruckNotice />
-      </section>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-4'></div>
+        <div className='col-md-4'>
+          <section>
+            <h1>Foodtruck Name</h1>
+            <button>찜하기아이콘</button>
+            <WaitingNum />
+          </section>
+          <div className='col-md-4'></div>
+        </div>
+        <div className='row'>
+          <section>
+            <button>공지</button>
+            <button>메뉴</button>
+            <button>리뷰</button>
+          </section>
+          <section>
+            <h2>
+              공지사항 <AiFillNotification />
+            </h2>
+            <FoodtruckNotice />
+          </section>
 
-      <section>
-        <h2>
-          메뉴 <MdOutlineMenuBook />
-        </h2>
+          <section>
+            <h2>
+              메뉴 <MdOutlineMenuBook />
+            </h2>
 
-        <MenuList menus={DUMMY_DATA} />
-      </section>
-    </>
+            <MenuList menus={DUMMY_DATA} />
+          </section>
+        </div>
+      </div>
+    </div>
   );
 };
 

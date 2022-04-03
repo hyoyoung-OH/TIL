@@ -43,15 +43,14 @@ const Header = () => {
               </a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='#'>
+              <Link to='/cart' class='nav-link'>
                 Cart
-              </a>
+              </Link>
             </li>
             <li class='nav-item dropdown'>
               <a
                 class='nav-link dropdown-toggle'
                 data-bs-toggle='dropdown'
-                href='#'
                 role='button'
                 aria-haspopup='true'
                 aria-expanded='false'
