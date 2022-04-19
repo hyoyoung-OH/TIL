@@ -36,12 +36,13 @@ import DiaryEditor from './DiaryEditor';
 // ];
 
 function App() {
+  //일기데이터를 배열로 저장하니까 배열로 초기값을 설정
   const [data, setData] = useState([]);
 
   const dataId = useRef(0);
 
   const onCreate = (author, content, emotion) => {
-    const created_date = new DataTransfer().getTime();
+    const created_date = new Date().getTime();
     const newItem = {
       author,
       content,
@@ -55,9 +56,8 @@ function App() {
 
   return (
     <div className='App'>
-      <DiaryEditor />
-      <DiaryList diaryList={[data]} />
-      {/* <div>console.log(author)</div> */}
+      <DiaryEditor onCreate={onCreate} />
+      <DiaryList diaryList={data} />
     </div>
   );
 }
