@@ -1,13 +1,16 @@
-# TIL 
+# TIL
 
-```오늘 공부한 것은 오늘 정리합니다.```
+`오늘 공부한 것은 오늘 정리합니다.`
 <br>
 <br>
 <br>
 
 ## JAVA
 
+## JavaScript
+
 ## [kubernetes](#kubernetes)
+
 <hr>
 
 - [쿠버네티스는 무엇인가?](./kubernetes/what-is-k8s.md)
@@ -23,16 +26,10 @@
 - [Controller](./kubernetes/Controller.md)
 
 ## [AWS](#AWS)
+
 - [What-is-cloud-computing](./AWS/what-is-cloud-computing.md)
 - [IAM](./AWS/IAM.md)
 - [EC2](./AWS/EC2.md)
 - [S3](./AWS/S3.md)
 - [SNS](./AWS/SNS.md)
 - [CloudFormation](./AWS/CloudFormation.md)
-
-
-
-
-
-
-
